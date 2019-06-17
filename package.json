@@ -1,0 +1,25 @@
+{
+  "name": "onstate",
+  "version": "1.0.0",
+  "description": "Test playground",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccene/OnState.git"
+  },
+  "author": "Cosmin C Ene",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ccene/OnState/issues"
+  },
+  "homepage": "https://github.com/ccene/OnState#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}

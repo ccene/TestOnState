@@ -1,0 +1,181 @@
+// tro remove the body - live server adds a crazy margin
+
+$card-width-mobile: 375px;
+$card-width-desktop: 1366px;
+$card-height-mobile: 247px;
+$card-height-desktop: 900px;
+
+@font-face {
+    font-family: "Inter-SemiBold";
+    src: url("/src/fonts/Inter-SemiBold.otf") format("otf");
+  }
+@font-face {
+    font-family: "Inter-Regular";
+    src: url("/src/fonts/Inter-Regular.otf") format("otf");
+  }
+@font-face {
+    font-family: "Inter-ExtraBold";
+    src: url("/src/fonts/Inter-ExtraBold.otf") format("otf");
+  }
+
+body {
+    margin: 0;
+}
+.container {
+    margin: 10px;
+}
+
+
+.on-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 50px;
+    margin: 15px;
+}
+
+.on-header__logo {
+    margin-left: 6px;
+    
+    &h1 {
+        width: 108px;
+        height: 20px;
+        line-height: 20px;
+        font-family: 'Inter-ExtraBold';
+    }
+}
+
+.on-nav {
+    width: 50px;
+    height: 50px;
+    background-color: red; 
+    margin-right: 6px;
+}
+
+.on-nav__burger {
+    width: 30px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.on-nav__burger:after, 
+.on-nav__burger:before, 
+.on-nav__burger div {
+    background-color: #fff;
+    border-radius: 0;
+    content: '';
+    display: block;
+    height: 3px;
+    margin: 5px 0;
+}
+
+// aia mare aici --- 
+.on-presentation__photo {
+    background-image: url(https://www.fillmurray.com/900/1366);
+    width: 375px;
+    height: 530px;
+    margin: 0 0 30px 0;
+    padding: 0;
+
+        @media (max-width: 380px) {
+            background-image: url(https://www.fillmurray.com/247/375);
+    }
+}
+
+.on-product-presentation{
+    margin-bottom:40px;
+
+    &on-title {
+        color: #000000;
+        font-family: "Inter-SemiBold";
+        font-size: 22px;
+        line-height: 30px;
+
+        &on-sub-title {
+            color: #bbb;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.on-text--description-regular{
+    color: #000000;
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.on-photo__card {
+    margin-bottom: 30px;
+    background-image: url(https://loremflickr.com/900/1366);
+
+        @media (max-width: 380px) {
+            background-image: url(https://loremflickr.com/247/375);
+    }
+}
+
+.on-long-photo__card {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 25px 10px 0 10px solid #bbb;
+    background-image: url(https://loremflickr.com/2550/1346);
+
+    @media (max-width: 380px) {
+        background-image: url(https://loremflickr.com/770/365);
+        border: 15px 5px 0 5px solid #bbb;
+}
+}
+
+.on-carousel {
+    width: 100%;
+    position: relative;
+    margin: 30px 0;
+    height: $card-height-desktop;
+    display: none;
+    
+    @media (max-width: 380px) {
+        height: $card-height-mobile;
+    }
+}
+
+// .on-carousel--slide {
+//     display: none;
+// }
+
+// .on-carousel--slide__show{
+//     display: inline-block;
+// }
+//   .on-carousel--prev, 
+//   .on-carousel--next {
+//     cursor: pointer;
+//     position: absolute;
+//     top: 50%;
+//     width: auto;
+//     margin-top: -22px;
+//     padding: 16px;
+//     color: white;
+//     font-weight: bold;
+//     font-size: 18px;
+//     transition: 0.6s ease;
+//     border-radius: 0 3px 3px 0;
+//     user-select: none;
+
+//     &.on-carousel--next {
+//         right: 0;
+//         border-radius: 3px 0 0 3px;
+//     }
+//   }
+
+//   .on-carousel--dots-dot {
+//     cursor: pointer;
+//     height: 15px;
+//     width: 15px;
+//     margin: 0 2px;
+//     background-color: #bbb;
+//     border-radius: 50%;
+//     display: inline-block;
+//     transition: background-color 0.6s ease;
+//   }
